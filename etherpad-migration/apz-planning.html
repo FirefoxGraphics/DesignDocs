@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>apz-planning</title>
+<meta name="generator" content="Etherpad">
+<meta name="author" content="Etherpad">
+<meta name="changedby" content="Etherpad">
+<meta charset="utf-8">
+<style>
+* {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+}
+ul.indent {
+  list-style-type: none;
+}
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+body > ol {
+  counter-reset: first second third fourth fifth sixth seventh eigth ninth tenth eleventh twelth thirteenth fourteenth fifteenth sixteenth;
+}
+ol > li:before {
+  content: counter(first) ". ";
+  counter-increment: first;
+}
+ol > ol > li:before {
+  content: counter(first) "." counter(second) ". ";
+  counter-increment: second;
+}
+ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) ". ";
+  counter-increment: third;
+}
+ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) ". ";
+  counter-increment: fourth;
+}
+ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) ". ";
+  counter-increment: fifth;
+}
+ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) ". ";
+  counter-increment: sixth;
+}
+ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) ". ";
+  counter-increment: seventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) ". ";
+  counter-increment: eigth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) ". ";
+  counter-increment: ninth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) ". ";
+  counter-increment: tenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) ". ";
+  counter-increment: eleventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) ". ";
+  counter-increment: twelth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) ". ";
+  counter-increment: thirteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) ". ";
+  counter-increment: fourteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) ". ";
+  counter-increment: fifteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) "." counter(sixthteenth) ". ";
+  counter-increment: sixthteenth;
+}
+ol {
+  text-indent: 0px;
+}
+ol > ol {
+  text-indent: 10px;
+}
+ol > ol > ol {
+  text-indent: 20px;
+}
+ol > ol > ol > ol {
+  text-indent: 30px;
+}
+ol > ol > ol > ol > ol {
+  text-indent: 40px;
+}
+ol > ol > ol > ol > ol > ol {
+  text-indent: 50px;
+}
+ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 60px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 70px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 80px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 90px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 100px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 110px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 120px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 130px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 140px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 150px;
+}
+
+</style>
+</head>
+<body>
+On deck:<br>&nbsp;* WebRender integration<br>&nbsp;* IOSurface&#x2F;ClientStorage improvements (bug 1265824, <s>bug 1261166</s>) - jrmuizel and mstange working on this (but not really)<br>&nbsp;* web animation timeline stuff (botond working on this Q3&#x2F;Q4 2016, 2017?)<br><ul class="indent"><li>&nbsp;* <a href="https&#x3a;&#x2F;&#x2F;w3c&#x2e;github&#x2e;io&#x2F;web&#x2d;animations&#x2F;">https:&#x2F;&#x2F;w3c.github.io&#x2F;web-animations&#x2F;</a></li><li>&nbsp;* <a href="https&#x3a;&#x2F;&#x2F;wiki&#x2e;mozilla&#x2e;org&#x2F;Platform&#x2F;Layout&#x2F;Extended&#x5f;Timelines">https:&#x2F;&#x2F;wiki.mozilla.org&#x2F;Platform&#x2F;Layout&#x2F;Extended_Timelines</a></li><li>&nbsp;* <a href="https&#x3a;&#x2F;&#x2F;lists&#x2e;w3&#x2e;org&#x2F;Archives&#x2F;Public&#x2F;www&#x2d;style&#x2F;2014Sep&#x2F;0135&#x2e;html">https:&#x2F;&#x2F;lists.w3.org&#x2F;Archives&#x2F;Public&#x2F;www-style&#x2F;2014Sep&#x2F;0135.html</a></li><li>&nbsp;* <a href="https&#x3a;&#x2F;&#x2F;docs&#x2e;google&#x2e;com&#x2F;document&#x2F;d&#x2F;1vRUo&#x5f;g1il&#x2d;evZs975eNzGPOuJS7H5UBxs&#x2d;iZmXHux48&#x2F;edit">https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1vRUo_g1il-evZs975eNzGPOuJS7H5UBxs-iZmXHux48&#x2F;edit</a></li></ul><br>Other large efforts<br>&nbsp;* Subframe zooming<br>&nbsp;&nbsp; * Need to discuss this more with layout<br>&nbsp;&nbsp; * Implementing this would be work, but might simplify the overall architecture<br>&nbsp;&nbsp; * <s>might want this for the gaia email app rewrite</s><br>&nbsp;* bug 1021527 - add a property to prevent a specific layer from zooming (CSS property position:device-fixed?)<br>&nbsp;&nbsp; * this is desirable to prevent the text selection caret to change size<br>&nbsp;* new scroll snapping spec (shelved for now)<br><br><br>Past stuff<br>----------<br><br>For B2G 2.0: UX requests for homescreen and in general<br>&nbsp;* <a href="https&#x3a;&#x2F;&#x2F;etherpad&#x2e;mozilla&#x2e;org&#x2F;fxos&#x2d;scrolling">https:&#x2F;&#x2F;etherpad.mozilla.org&#x2F;fxos-scrolling</a><br>&nbsp;&nbsp; * #1 - flywheel scrolling. they can live with more checkerboarding (bug 907123) - kats<br>&nbsp;&nbsp;&nbsp;&nbsp; * landed, needs tuning<br>&nbsp;&nbsp;&nbsp;&nbsp; * seems to be working as expected.<br>&nbsp;&nbsp; * #2 - overscroll effect when handoff is not possible any more (bug 998025) - botond<br>&nbsp;&nbsp;&nbsp;&nbsp; * <a href="https&#x3a;&#x2F;&#x2F;www&#x2e;dropbox&#x2e;com&#x2F;sh&#x2F;jh7u7clbcvw9inb&#x2F;s9bz043eop">https:&#x2F;&#x2F;www.dropbox.com&#x2F;sh&#x2F;jh7u7clbcvw9inb&#x2F;s9bz043eop</a><br>&nbsp;&nbsp;&nbsp;&nbsp; * needs tuning still<br>&nbsp;&nbsp;&nbsp;&nbsp; * some open issues under bug 1020045 - <a href="https&#x3a;&#x2F;&#x2F;bugzilla&#x2e;mozilla&#x2e;org&#x2F;showdependencytree&#x2e;cgi&#x3f;id&#x3d;1020045&amp;hide&#x5f;resolved&#x3d;1">https:&#x2F;&#x2F;bugzilla.mozilla.org&#x2F;showdependencytree.cgi?id=1020045&amp;hide_resolved=1</a><br>&nbsp;&nbsp; * #3 - scrolling physics - send prefs to UX and let them play with it (bug 945789)<br>&nbsp;&nbsp;&nbsp;&nbsp; * sent prefs to UX, waiting for feedback from gordon brander<br>&nbsp;&nbsp;&nbsp;&nbsp; * got feedback, landed changes<br>&nbsp;&nbsp; * #4 - low res tiling&#x2F;checkerboarding pattern (also progressive tiling) (bug 993473)<br>&nbsp;&nbsp;&nbsp;&nbsp; * basic behaviour works out-of-the-box. mostly need to tune and debug any bad behaviour<br>&nbsp;&nbsp;&nbsp;&nbsp; * mostly working. some issues, see <a href="https&#x3a;&#x2F;&#x2F;bugzilla&#x2e;mozilla&#x2e;org&#x2F;showdependencytree&#x2e;cgi&#x3f;id&#x3d;993473&amp;hide&#x5f;resolved&#x3d;1">https:&#x2F;&#x2F;bugzilla.mozilla.org&#x2F;showdependencytree.cgi?id=993473&amp;hide_resolved=1</a><br>&nbsp;&nbsp; * bug 949859 (phantom fling)<br><br>For B2G 2.1<br>&nbsp;* splitting scroll content into layers (bug 967844)<br>&nbsp;&nbsp; * blocked on layout<br>&nbsp;&nbsp; * may run into trouble with CSS transforms and have to deal with them more correctly<br>&nbsp;* bug 989403 (botond)<br>&nbsp;&nbsp; * we should also try to do all of bug 993525 for 2.1 (bumped out of 2.1 since we never committed to it specifically)<br>&nbsp;* root frame scrollbars (bug 995519) and dependencies<br>&nbsp;<br>For B2G 2.2<br>&nbsp;* bug 987532 (silk)<br>&nbsp;&nbsp; * long dependency chain on the APZ side that we need to fix:<br>&nbsp;&nbsp; * bug 918288 - kats<br>&nbsp;&nbsp; * bug 920036<br>&nbsp;&nbsp; * bug 950934<br>&nbsp;&nbsp; * bug 930939<br>&nbsp;&nbsp; * there&#x27;s other stuff to get vsync hooked up properly<br>&nbsp;* overscroll stretch effect tuning. bug 1066888 (botond)<br>&nbsp;&nbsp; * use a spring instead of friction when reducing the overscroll, add some oscillations in the snapback<br>&nbsp;&nbsp; * bug 1042103 - Cwiiis (probably will be in late 2.2)<br>&nbsp;&nbsp; * bug 1096513 - Cwiiis (also will be in late 2.2)<br>&nbsp;* fling curving<br>&nbsp;* overscroll&#x2F;fling curve tuning<br><br>Done in 39:<br>&nbsp;* bug 993525 (carry over work from 34, but uncommitted)<br><br>Done in 47:<br>&nbsp;* bug 1020199 - Make sure APZ works with nested oop iframe (:peterv)<br><br>Done in 48:<br><ul class="bullet"><li>APZ on desktop (bug 1178298)</li><li>APZ on Fennec (bug <strong>1206874</strong>)</li></ul><br>Done in 48-50:<br>&nbsp;* testing improvements<br><br>Done in 52:<br><ul class="bullet"><li>Touch support on desktop (bug 1244402, bug 960316, <s>bug 960209</s>)</li><li>touch-action</li></ul><br>Other stuff:<br>&nbsp;* Smooth scroll CSSOM API<br>&nbsp;&nbsp; * :kip is working on this - see bug 964097 and bug 1022825<br>&nbsp;* Rocketbar support<br>&nbsp;&nbsp; * <a href="https&#x3a;&#x2F;&#x2F;mozilla&#x2e;app&#x2e;box&#x2e;com&#x2F;s&#x2F;8b59zir45jm1vp7xtsxy">https:&#x2F;&#x2F;mozilla.app.box.com&#x2F;s&#x2F;8b59zir45jm1vp7xtsxy</a> page 12 - may require parent-process APZ (bug 950934)<br>&nbsp;&nbsp;&nbsp;&nbsp; * situation still unclear, their design as last known may not result in good UX<br>&nbsp;&nbsp;&nbsp;&nbsp; * waiting for ben francis to get back to us<br><br>Won&#x27;t do:<br>&nbsp;* Allowing keyboard to pop over content (bug 970093)<br>&nbsp;&nbsp; * proposed by vivien, no UX feedback yet. bug 970093 is tracking this<br>&nbsp;&nbsp; * currently&nbsp; in late brainstorming&#x2F;PoC phase, the design and handling edge cases&nbsp; needs to be solidified before there is anything to do here<br>&nbsp;* global magnification for accessibility<br>&nbsp;* Adding memory reporting to about:memory of APZ structures (see bug 1277684)<br>
+</body>
+</html>
