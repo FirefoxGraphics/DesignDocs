@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>wr-toronto</title>
+<meta name="generator" content="Etherpad">
+<meta name="author" content="Etherpad">
+<meta name="changedby" content="Etherpad">
+<meta charset="utf-8">
+<style>
+* {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+}
+ul.indent {
+  list-style-type: none;
+}
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+body > ol {
+  counter-reset: first second third fourth fifth sixth seventh eigth ninth tenth eleventh twelth thirteenth fourteenth fifteenth sixteenth;
+}
+ol > li:before {
+  content: counter(first) ". ";
+  counter-increment: first;
+}
+ol > ol > li:before {
+  content: counter(first) "." counter(second) ". ";
+  counter-increment: second;
+}
+ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) ". ";
+  counter-increment: third;
+}
+ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) ". ";
+  counter-increment: fourth;
+}
+ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) ". ";
+  counter-increment: fifth;
+}
+ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) ". ";
+  counter-increment: sixth;
+}
+ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) ". ";
+  counter-increment: seventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) ". ";
+  counter-increment: eigth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) ". ";
+  counter-increment: ninth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) ". ";
+  counter-increment: tenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) ". ";
+  counter-increment: eleventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) ". ";
+  counter-increment: twelth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) ". ";
+  counter-increment: thirteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) ". ";
+  counter-increment: fourteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) ". ";
+  counter-increment: fifteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) "." counter(sixthteenth) ". ";
+  counter-increment: sixthteenth;
+}
+ol {
+  text-indent: 0px;
+}
+ol > ol {
+  text-indent: 10px;
+}
+ol > ol > ol {
+  text-indent: 20px;
+}
+ol > ol > ol > ol {
+  text-indent: 30px;
+}
+ol > ol > ol > ol > ol {
+  text-indent: 40px;
+}
+ol > ol > ol > ol > ol > ol {
+  text-indent: 50px;
+}
+ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 60px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 70px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 80px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 90px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 100px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 110px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 120px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 130px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 140px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 150px;
+}
+
+</style>
+</head>
+<body>
+# Agenda for the Toronto WebRender hack week Jan 16 - 20, 2017<br><br><strong>## Refactoring how &#x2F; when tiling is used</strong><br><br>A recap of the latest WR changes and the stuff to come.<br>Reasoning for killing tiles, complications, and performance results.<br>Using the depth buffer for the win.<br>Tiling vs software occlusion culling.<br><br><strong>## General optimization</strong><br>Look at <a href="https&#x3a;&#x2F;&#x2F;github&#x2e;com&#x2F;servo&#x2F;servo">https:&#x2F;&#x2F;github.com&#x2F;servo&#x2F;servo</a><br><br><strong>## Clipping optimizations</strong><br><br>Providing the optimal code path for a single rounded-cornered rectangle.<br>Avoiding the allocation and rendering of the opaque parts of complex intersecting clips.<br>Figuring the progressive clipping logic for the complex cases.<br><br><strong>## 3D transform support</strong><br><br>What is there currently. What is missing.<br>Primitive sorting by Z depth.<br><br><strong>## SVG API&#x2F;implementation</strong><br><br>Generic API for SVG and Glyphs.<br>How to make the API work reasonably with big SVG&#x27;s (hundreds of thousands of elements)<br><br><strong>## Image integration</strong><br><br>Replacing the Arc&lt;Vec&lt;u8&gt;&gt; with a trait that would let us do things to avoid copies in gecko and unlock the memory after upload<br>Figuring update_image API changes for progressive image loading<br><br><strong>## C++ bindings organization</strong><br>general organization of things namespaces, avoiding proliferation of types, etc.<br><br><strong>## CI testing</strong><br>&nbsp;Adding reftests to WR repo<br><ul class="indent"><li>&nbsp;Also, if we want to follow stylo and put webrender into the servo&#x2F;servo repo and have it synced to m-c</li></ul>&nbsp;Automated performance regression tests<br>&nbsp;Recording # of pixels written per test<br>&nbsp;Storing and displaying these statistics<br>&nbsp;<br><strong>## Angle compatibility</strong><br>&nbsp;Discuss all the details with Glenn so that we are ready to work on it the week after when Sotaro is in.<br>&nbsp;Look into the glShaderBinary-providing Angle extension to pre-cache shaders (on Windows)<br>&nbsp;<br><strong>&nbsp;## More graphics API backends for WR</strong><br>&nbsp;Do we need any for MVP?<br><br>Some possible other topics:<br>&nbsp;&nbsp;&nbsp; Subpixel positioning<br>&nbsp;&nbsp;&nbsp; Incremental vertex texture updates<br>&nbsp;&nbsp;&nbsp; Zoom &#x2F; pan<br>&nbsp;&nbsp;&nbsp; Pixel snapping<br>&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br><strong># ============================ #</strong><br><strong># ======== Discussion ========== #</strong><br><strong># ============================ #</strong><br><br><strong>## Recap of WR state</strong><br><br>Tile problems:<br>&nbsp; - transformed stuff clips to tiles, processes more pixels than needed<br>&nbsp; - some effects like blur need to sample outside the bounds<br><br>Tile goods:<br>&nbsp; - clip can skip the tiles completely inside the inner rectangles<br>&nbsp; - better batching (even at the cost of more vertices)<br><ul class="indent"><li>&nbsp; - because when tiling, we know in advance that some primitives don&#x27;t overlap, so we don&#x27;t have to split the batches that often</li></ul><br>TODO:<br>&nbsp; - get the worst case scenario for the tile-less rendering<br>&nbsp; - can still do tiling (selectively) for batching, not shaders<br>&nbsp; - still need a bit of shader changes to finish (*)<br>&nbsp; - <s>figure out the slowness of Servo page (from 2.5ms to 5ms)</s><br>&nbsp; - check that rounded cornered rects have their own performance bar!<br>&nbsp;<br>Document the discussion points, see <a href="https&#x3a;&#x2F;&#x2F;github&#x2e;com&#x2F;servo&#x2F;webrender&#x2F;issues&#x2F;744">https:&#x2F;&#x2F;github.com&#x2F;servo&#x2F;webrender&#x2F;issues&#x2F;744</a><br><br><strong>## Missing image API features</strong><br><br>&nbsp; - handle large images and do tiling on them into 2D Array textures.<br>&nbsp; - map external images to texture atlas regions.<br>&nbsp; - provide its internal timing for the external image callbacks, so that the vsync expectation is taken into account.<br><br><strong>## CI</strong><br><br>&nbsp; - WR recently got the ref-testing<br><ul class="indent"><li>- runs on Travis CI</li><li>- compares YAML to (a simplified) YAML, not to raw images at the moment</li></ul>&nbsp; - can we add simple profiling to CI (Travis)?<br>&nbsp;&nbsp;&nbsp; - need dedicated hardware for proper graphics timing<br><br><strong>## 3D Transforms</strong><br><br>We can&#x27;t rely on the depth buffer because of transparent surfaces (which would require some sort of order-independent transparency).<br>We need to split the intersecting planes and order the non-intersecting results before processing it with our current depth ordering.<br><br>There is a flag passed in with the StackingContext for &quot;preserve 3D&quot;, which forces us to re-order the children every time we update the spatial graph.<br>For 3D-transformed nodes, we need 2 paths:<br><ol class="number"><li>simple nodes with solid color - just drawn straight to the frame</li><li>complex nodes with stuff inside them:</li><li>we draw to an off-screen target (render task)</li><li>that simplifies our plane splitting, since the split quads would just have different UVs of the vertices</li></ol><br>Need to do it after the transform after we figure the scrolling root&#x2F;stacking context architecture.<br><br>There is an open question about transformed text w.r.t. sub-pixel AA. Perhaps, we don&#x27;t need to worry about AA for the animated text?<br>TODO: check Gecko on Windows (Jeff M)<br>TODO: add support for the transformed text rasterization in WR<br><ul class="bullet"><li>add the rotation angle to the glyph key</li><li>handle that in the vertex shader</li></ul><br><strong>## Naming and directory structure</strong><br><br><ul class="bullet"><li>Directory structure will look like this:</li></ul>gfx&#x2F;<br><ul class="indent"><li>webrender&#x2F; &lt;-- this is <a href="https&#x3a;&#x2F;&#x2F;github&#x2e;com&#x2F;servo&#x2F;webrender&#x2F;tree&#x2F;master&#x2F;webrender">https:&#x2F;&#x2F;github.com&#x2F;servo&#x2F;webrender&#x2F;tree&#x2F;master&#x2F;webrender</a></li><li>webrender_traits&#x2F; &lt;-- this is <a href="https&#x3a;&#x2F;&#x2F;github&#x2e;com&#x2F;servo&#x2F;webrender&#x2F;tree&#x2F;master&#x2F;webrender&#x5f;traits">https:&#x2F;&#x2F;github.com&#x2F;servo&#x2F;webrender&#x2F;tree&#x2F;master&#x2F;webrender_traits</a></li><li>webrender_bindings&#x2F;</li><ul class="indent"><li>this will contain C bindings named wr_blah_blah_blah.</li><li>this will also contain some C++ wrappers in the mozilla::wr namespace</li></ul><li>layers&#x2F;</li><ul class="indent"><li>wr&#x2F;</li><ul class="indent"><li>this will contain C++ classes in the mozilla::layers namespace</li></ul></ul><li>If any names need to be prefixed to make them more obviously webrender-related, the prefix should be &quot;WebRender&quot; or &quot;Wr&quot; (note the case).</li><li>nical is going to make these changes</li></ul><br><strong>## Image formats</strong><br><br>MinVP:<br><ul class="bullet"><li>remove RGB - not supported by HW</li><li>add a flag for transparency, affecting how RGBA is handled</li><li>move that flag, format, width, and height into some sort of ImageDescriptor</li><li>bring the format names close to DXGI&#x2F;Vulkan</li></ul><br><strong>## Scrolling roots VS Stacking contexts VS Containing blocks VS clipping</strong><br><br>Main problem - scrolling roots are NOT stacking contexts, in general. The movement to separate them has started, but there was no general model to actually process the scroll regions correctly.<br>Extra problem: stacking contexts are NOT always propagating their transformation&#x2F;position changes to the child items.<br><br>Solution:<br><ul class="bullet"><li>API should define scrolling roots, independently from pushing&#x2F;popping the stacking contexts.</li><li>Each item, stacking context, or a clip region is defined within the current stacking context, but also carries a scrolling root ID that has been defined.</li><li>WR builds a tree of reference frames (RF) and scrolling roots (SR). An RF&#x27;s scroll root is the first one on the way up the tree.</li><li>Stacking contexts get destructed internally into:</li><ul class="bullet"><li>has a transform?</li><ul class="bullet"><li>yes - becomes a reference frame (RF)</li><li>no - becomes an extra position offset for the contained elements</li></ul><li>Effect groups (like opacity and blend modes) (may need clarification here, since it may require the whole stacking context to render into an off-screen target)</li></ul><li>Each of RF, SR, clip, or item is associated with both a containing RF and a SR. The world transformation is computed as:</li><ul class="bullet"><li>T = local_transform * T_rf + delta_scroll * T_sr</li><li>local_transform is just an offset for anything but RF</li><li>T_rf and T_sr are expected to be resolved here. If there is a dependency loop, we consider the input to be invalid (assuming it&#x27;s not possible in CSS).</li></ul><li>Using this equation, we can descend into the SRF tree and re-compute all the world transformations each frame</li><li>The GPU representation for shaders will have an entry for each `(RF, Option&lt;SR&gt;)` pair, shaders don&#x27;t even need to be changed</li></ul><br>One of the side effects is - less work for Servo to prepare the display lists for us.<br>The clip stack gets accumulated via the same SRF tree.<br><br><strong>&nbsp;## More graphics API backends for WR</strong><br><br>We still keep Angle for:<br><ul class="bullet"><li>WebGL, it will need to provide a texture for us in the API that we use natively.</li><li>DXGI interop (video decoding)</li><li>Tooling (better graphics debugging)</li><li>better ES3 compatibility</li><li>D3D9 compatibility</li></ul><br>MinVP - keep using Angle.<br>MaxVP - get D3D12 first.<br><br><strong>## SVG&#x2F;Path rendering plans</strong><br><br>MinVP plan:<br>WR knows what area is covered by a path, splits it into tiles of equal size, allocated in a single texture array.<br>When WR backend processes the visibility, it knows which tiles (or regions of them) are visible. Then it has a trait for path rendering. For each visible tile, it requests a blob that the path renderer can draw into a CPU-side image. This blob can then be skPicture, ftOutline, or whatever else.<br><br>Benefits of this approach are:<br>&nbsp;&nbsp;&nbsp; - no hard dependencies on skia or freetype<br>&nbsp;&nbsp;&nbsp; - potentially less work to do since we only care about visible tiles<br>&nbsp;&nbsp;&nbsp; - automatic support for large geometry objects, because of tiling<br>&nbsp;&nbsp;&nbsp; - off-loading the content thread, which no longer needs to draw those images<br>&nbsp;&nbsp;&nbsp; - unlocks the way to remove the painted layers entirely, cleaning up the Gecko code<br><br>The previous plan was to use gecko tiled painted layers in the content process to render into texture client and share the produced textures with WebRender using the external image mechanism.<br>The new plan is to use a special kind of painted layer that creates a recording of the drawing commands (using SkPicture or Moz2D recording or some other serialization mechanism) and pass that to webrender as described above. The advantages are that we preserve the layerization logic thanks to having a recording per painted layer, while moving all of the remaining painting off the main thread, and avoiding the memory and CPU overheads associated to texture sharing and the buffering it requires.<br>The problem with SkPicture is that it serializes everything into each stream, including images and font data which can cause some recordings to be huge (for example 3 layers containing text using the same web font will cause the font data to be serialized 3 times). So we may decide to not use SkPicture. This should be transparent to WebRender, however: the idea is to register a &quot;VectorImageRenderer&quot; which take blobs containing the recording and produces the rasterized output images. This way the VectorImageRenderer trait can be implemented by Gecko without WebRender having to depend on Skia or any other solution we might choose.<br>As a bonus the research folks can experiment with crazy GPU vector rendering by implementing their own VectorImageRenderer without colliding with Gecko requirements.<br>nical has an incomplete webrender patch that adds this VectorImage concept (but doesn&#x27;t do any rendering yet).<br><br>MaxVP:<br>WR needs to pave a way for a native GPU path renderer, be it either Lyon or something new and fancy that Patrick is working on.<br><br><strong>## Image integration</strong><br><br>Shared memory for image data:<br>For add_image, hiding the image data behind a trait would involve issues, since it has to be serializable (hence, the trait should be boxed and derived from serde traits).<br>This is not really needed for MinVP, since Gecko will use the extended external image API stuff instead (see &quot;missing image API features&quot;).<br>Related - <a href="https&#x3a;&#x2F;&#x2F;github&#x2e;com&#x2F;servo&#x2F;webrender&#x2F;issues&#x2F;723">https:&#x2F;&#x2F;github.com&#x2F;servo&#x2F;webrender&#x2F;issues&#x2F;723</a><br><br>Progressive images:<br><ul class="bullet"><li><em>interlacing</em> (PNG) - to be handled by Gecko internally, WR will get the full image contents on each update. Alternatively, we may expect the stride given to update_image to be a multiple of the actual stride.</li><li><em>chunks</em> (JPEG) - TODO: change the update_image API to receive a sub-image, thus providing a rectangle with stride. We also need to fill up the image as transparent when it&#x27;s just created.</li></ul><br><strong>### Sub-pixel positioning</strong><br><br>TODO: Add the sub-pixel offset to the glyph key, quantized to 1&#x2F;3 or 1&#x2F;4 of the pixel.<br>Doesn&#x27;t make sense for large glyphs, since it may force multiple copies of a glyph, consuming VRAM.<br><br><strong>### Zoom &#x2F; pan</strong><br><br>Logic is essentially similar to our `device_pixel_ratio`, minus the snapping part.<br>TODO: need to add the zoom&#x2F;offset API setters on the pipeline level (as well as add the logic to the shaders), which would support panning&#x2F;zooming in the document or iframes.<br><br><strong>### Incremental vertex texture updates</strong><br><br>Instead of updating the textures directly and tracking the dirty areas, we can scatter the changes by drawing a bunch of point primitives into an FBO with those textures.<br>Uploading the data would then be a stream operation (with discard), and we&#x27;d only need to upload the changed information, and nothing else.<br>See <a href="https&#x3a;&#x2F;&#x2F;github&#x2e;com&#x2F;servo&#x2F;webrender&#x2F;issues&#x2F;458">https:&#x2F;&#x2F;github.com&#x2F;servo&#x2F;webrender&#x2F;issues&#x2F;458</a><br><br>## <strong>Clipping optimizations</strong><br><br><u>General case solution:</u><br><br>Find out the inner rectangle of the clip stack - the axis aligned (in world space) intersection of all the clip instances, area contained by all clips.<br>The difference between the outer rectangle of the stack and the inner one is split into 4 axis-aligned rectangles that are allocated independently in the mask cache. All the clip instances are then drawn into all 4 sub-rectangles, with some room for culling on the way.<br>When we draw an affected primitive, we have the cache coordinates of all 4 sub-rectangles, and we figure out which to sample first (or none).<br><br>Each affected primitive can be drawn in 2 passes then. The intersection of it with the inner rectangle (of the clip stack) can be drawn in the opaque pass.<br>Problem is - the inner rectangle is given in the world space, and the primitive is in the local space, so intersecting those would be difficult.<br>Then the full primitive can be drawn in the transparent pass. The pixels already filled out by the opaque pass will be rejected by the Z test.<br><br>Optimizations: any clip instance that contains another clip instance completely can be discarded from the stack.<br>Likewise, a primitive that is completely inside the inner rectangle of the clip stack can render as if there is no clips on it.<br><br><u>Popular custom case - one rounded cornered rectangle:</u><br><br>Split the rectangle into 4 parts: 3 parts are covering all the opaque space inside it, and the rest belongs to the rounded corners.<br>In the opaque pass, the first 3 parts are drawn.<br>The mask is generated for the corners independently.<br>The corners are then drawn as little rectangles in the transparency pass, each fetching from a single mask region.<br><br><u>Rendering the clip stack itself into the mask:</u><br><br>Current approach:<br><ol class="number"><li>figure out the axis-aligned bounding box of the intersection of all clips in the stack</li><li>allocate the target with the size of that bounding box, assume it was previously cleared as opaque (1)</li><li>render each clip instance into the mask with multiplicative blending</li><ol class="number"><li>the vertex shader stretches the vertices, making sure that each clip is covering the whole mask (!)</li></ol><li>it&#x27;s done. The primitive then just takes a sample from the mask for each pixel.</li></ol><br>Problems:<br><ol class="number"><li>For a common case of a rounded cornered rectangle, we allocate all the space it takes, which may span over multiple screens (!). This is now being addressed by the &quot;Popular custom case&quot; logic.</li><li>Drawing clip instances is piggy-backing on the transform shaders, which are no longer needed for general primitives because of the tile removal</li><li>Drawing clip instances spreads pixels outside of the clips, to cover the whole bounding box area</li><li>If some pixel is not covered by a clip instance, we still blend everything on top of it and process the clips.</li></ol><br>Problems 2 and 3 could be addressed by using the stencil. We&#x27;d have it as 0 initially, then each instance would bump it to the next value. The primitive shader would just then need to read the value and compare it to the total number of clips that affect it.<br><br>Problem 4 can also be addressed. For each clip stack *level*, we&#x27;d only draw on top of pixels that passed all the clip tests to this level, and bump their values.<br>This optimization requires the stencil state to change for each clip stack level, so it would introduce some batch breaks. It seems to be the most efficient approach overall.<br><br>For both stencil techniques, there are 2 options to deal with clipped pixels:<br><ul class="bullet"><li>fetch the stencil in the fragment shaders of the primitives and compare the value to something we pass with the primitive</li><li>do an extra pass over the bounding box of the clip stack, drawing into the mask and filling all the pixels that didn&#x27;t pass some of the tests with 0</li></ul>&nbsp;<br><br><br><br>
+</body>
+</html>
