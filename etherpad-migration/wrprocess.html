@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>wrprocess</title>
+<meta name="generator" content="Etherpad">
+<meta name="author" content="Etherpad">
+<meta name="changedby" content="Etherpad">
+<meta charset="utf-8">
+<style>
+* {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+}
+ul.indent {
+  list-style-type: none;
+}
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+body > ol {
+  counter-reset: first second third fourth fifth sixth seventh eigth ninth tenth eleventh twelth thirteenth fourteenth fifteenth sixteenth;
+}
+ol > li:before {
+  content: counter(first) ". ";
+  counter-increment: first;
+}
+ol > ol > li:before {
+  content: counter(first) "." counter(second) ". ";
+  counter-increment: second;
+}
+ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) ". ";
+  counter-increment: third;
+}
+ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) ". ";
+  counter-increment: fourth;
+}
+ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) ". ";
+  counter-increment: fifth;
+}
+ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) ". ";
+  counter-increment: sixth;
+}
+ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) ". ";
+  counter-increment: seventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) ". ";
+  counter-increment: eigth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) ". ";
+  counter-increment: ninth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) ". ";
+  counter-increment: tenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) ". ";
+  counter-increment: eleventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) ". ";
+  counter-increment: twelth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) ". ";
+  counter-increment: thirteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) ". ";
+  counter-increment: fourteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) ". ";
+  counter-increment: fifteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) "." counter(sixthteenth) ". ";
+  counter-increment: sixthteenth;
+}
+ol {
+  text-indent: 0px;
+}
+ol > ol {
+  text-indent: 10px;
+}
+ol > ol > ol {
+  text-indent: 20px;
+}
+ol > ol > ol > ol {
+  text-indent: 30px;
+}
+ol > ol > ol > ol > ol {
+  text-indent: 40px;
+}
+ol > ol > ol > ol > ol > ol {
+  text-indent: 50px;
+}
+ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 60px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 70px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 80px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 90px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 100px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 110px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 120px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 130px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 140px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 150px;
+}
+
+</style>
+</head>
+<body>
+<br>Basic bugfix&#x2F;new code:<br><ul class="bullet"><li>write the code</li><li>commit (locally)</li><li>push it (to -- integration repo)</li><li>if a bug does not exist</li><ul class="bullet"><li>autocreate the bug</li><li>commit hook will do this (on client side)</li><li>only vetted contributors</li></ul><li>the commit will be referenced in the bug</li><li>the commit should be put up for review (if r= is not specified or similar)</li><ul class="bullet"><li>there must be a ticking clock on these reviews</li><ul class="bullet"><li>need very visible dashboards tracking unreviewed commits</li></ul><li>no unreviewed stuff ends up merged to Aurora</li></ul></ul><br>Integration Repo Mechanics<br><ul class="bullet"><li>bare minimum should be that it builds and does what you expect on your machine, and that relevant tests work</li><li>basically exactly on inbound, with more tolerance for things being broken *as long as things are taken care of*</li><li>tests run automatically on this</li><ul class="bullet"><li>both Quantum path and non-Quantum path</li><li>we can do batching or argue for priority</li><li>(subset of tests per commit, bigger set twice)</li></ul><li>if tests break or there&#x27;s a compilation issue</li><ul class="bullet"><li>Auto yell in #gfx if we&#x27;re confident enough it&#x27;s not an intermittent orange (e.g. build break).</li><li>patch that caused break gets backed out</li><li>what happens if I push a patch and a test breaks that was passing before and...</li><ul class="bullet"><li>that test works fine on my machine?</li><ul class="bullet"><li>judgement call - leave it in and fix it, or back it out</li><ul class="bullet"><li>but only if that affects Q path only</li><li>if it affects regular gecko path..</li></ul></ul><li>that test works fine on my machine&#x27;s platform (I&#x27;m on Windows), and fails on Mac on tests?</li><ul class="bullet"><li>judgement call, same as above</li><li>might be okay to get someone to commit ot fixing Mac in the next few hours, and leave Mac broken for a few hours</li></ul></ul><li>&quot;leaving things in&quot; will be harder as time goes on</li><ul class="bullet"><li>over time, you don&#x27;t get to leave Mac broken</li></ul></ul><li>merging from m-c to this repo</li><ul class="bullet"><li>sheriffs do it (daily)</li><ul class="bullet"><li>if there are issues, they ping someone and we need to fix</li></ul></ul><li>merging from this branch to m-c</li><ul class="bullet"><li>all tests need to be green</li><ul class="bullet"><li>meaning we can disable quantum-only tests and file bugs</li></ul></ul></ul><br><br>Implementing this workflow with current tools<br><ul class="bullet"><li>commit hook to autocreate bug</li><ul class="bullet"><li>that works on all platforms</li><li>might need a git equivalent</li></ul><li>some kind of tag &quot;r=post&quot; to flag things that are post-reviewed</li><li>we need a tool to cross-reference bugzilla to make sure commits are reviewed</li><ul class="bullet"><li>make sure we don&#x27;t miss anything</li></ul></ul><br><br>Magical github workflow<br><ul class="bullet"><li>things are still mirrored to bugzilla (and bugs only live in bugzilla)</li><ul class="bullet"><li>but not from bugzilla to any github tool</li></ul><li>using reviewable</li><ul class="bullet"><li>quick review directly in commit stream</li><li>review comments get pushed to bugzilla</li></ul><li>allowing pull requests from outside</li></ul><br>----------<br><br>webrender repo<br><ul class="bullet"><li>we will cargo vendor webrender stuff into m-c ourselves</li></ul><br>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>gfx-scenegraph</title>
+<meta name="generator" content="Etherpad">
+<meta name="author" content="Etherpad">
+<meta name="changedby" content="Etherpad">
+<meta charset="utf-8">
+<style>
+* {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+}
+ul.indent {
+  list-style-type: none;
+}
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+body > ol {
+  counter-reset: first second third fourth fifth sixth seventh eigth ninth tenth eleventh twelth thirteenth fourteenth fifteenth sixteenth;
+}
+ol > li:before {
+  content: counter(first) ". ";
+  counter-increment: first;
+}
+ol > ol > li:before {
+  content: counter(first) "." counter(second) ". ";
+  counter-increment: second;
+}
+ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) ". ";
+  counter-increment: third;
+}
+ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) ". ";
+  counter-increment: fourth;
+}
+ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) ". ";
+  counter-increment: fifth;
+}
+ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) ". ";
+  counter-increment: sixth;
+}
+ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) ". ";
+  counter-increment: seventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) ". ";
+  counter-increment: eigth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) ". ";
+  counter-increment: ninth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) ". ";
+  counter-increment: tenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) ". ";
+  counter-increment: eleventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) ". ";
+  counter-increment: twelth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) ". ";
+  counter-increment: thirteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) ". ";
+  counter-increment: fourteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) ". ";
+  counter-increment: fifteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) "." counter(sixthteenth) ". ";
+  counter-increment: sixthteenth;
+}
+ol {
+  text-indent: 0px;
+}
+ol > ol {
+  text-indent: 10px;
+}
+ol > ol > ol {
+  text-indent: 20px;
+}
+ol > ol > ol > ol {
+  text-indent: 30px;
+}
+ol > ol > ol > ol > ol {
+  text-indent: 40px;
+}
+ol > ol > ol > ol > ol > ol {
+  text-indent: 50px;
+}
+ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 60px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 70px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 80px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 90px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 100px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 110px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 120px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 130px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 140px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 150px;
+}
+
+</style>
+</head>
+<body>
+Advanced-Layers, Continued<br>REPO: <a href="https&#x3a;&#x2F;&#x2F;github&#x2e;com&#x2F;dvander&#x2F;gecko&#x2d;dev&#x2F;tree&#x2F;al">https:&#x2F;&#x2F;github.com&#x2F;dvander&#x2F;gecko-dev&#x2F;tree&#x2F;al</a><br>PREF: layers.mlgpu.dev-enabled to true<br>---------------------------------------------------------------------<br><br><br>TODO List: (1=easy 5=hard<br><br>Post-Landing:<br><ul class="bullet"><li>right-size intermediate surfaces in LayerTreeInvalidation (bug 1375785)</li><li>log after computing effective regions</li><li>fix bad call to VSSetConstantBuffers in EndFrame</li></ul><br>TODO DONE<br><ul class="bullet"><li><s>[?] Default clear color? DOCUMENTED</s></li><li><s>[1] Remove MLGBufferDesc and MLGBindFlags DONE</s></li><li><s>[2] Make MLGDevice initialization more log-y</s></li><li><s>[1] MayResample</s></li><li><s>[1] Make sure ASAP mode works OK</s></li><li><s>[1] Detect shader model 4 earlier WONTFIX</s></li><li><s>[1] Force Present</s></li><li><s>[?] Missing floor in nojs NOT AL, HAPPENS ON NIGHTLY</s></li><li><s>[1] Block rendering previous frame</s></li><li><s>[1] Initialize MLGDevice off the main thread</s></li><li><s>[2] Checkerboarding, if bug 1349418 doesn&#x27;t pan out (bug 1349418 landed)</s></li><li><s>[1] Telemetry histogram for failures</s></li><li><s>[1] Blocklist functionality</s></li><li><s>[1] Propagate MLGDevice creation failure to the UI</s></li><li><s>[0] Remove unnecessary MOZ_COUNT_CTOR&#x2F;DTOR</s></li><li><s>[2] Improve mask rect allocation logic</s></li><li><s>[2] memory use logging for constant buffers, etc</s></li><li><s>[2] Improve SharedBufferMLGPU allocation sizes</s></li><li><s>[2] ClearCachedRersources</s></li><li><s>[3] LayerTreeInvalidation integration</s></li><li><s>[?] Partial presents</s></li><li><s>[1] Widget composite callbacks</s></li><li><s>[2] Audit use of LM::GetCompositor</s></li><li><s>[1] Audit unimplemented APIs</s></li><li><s>[0] Profiler labels</s></li><li><s>[0] Frame time recording functions</s></li><li><s>[0] Warn when present fails</s></li><li><s>[2] Handle device resets&#x2F;stale textures - need bug 1363126</s></li><li><s>[1] Move ContainerLayer into its own file</s></li><li><s>[3] Bas&#x27;s double-buffer optimizations</s></li><li><s>[2] Cache MLGBuffers from layer constant lists)</s></li><li><s>ignore swapchain resizes for 0,0</s></li><li><s>add a way to disable ClearView</s></li><li><s>update docs for shader model</s></li><li><s>use visible region for color</s></li><li><s>reftest failures on shared constant buffer code</s></li><li><s>MLGTexture2D</s></li><li><s>use visible region for all draws</s></li><li><s>fix layer dump spew:</s></li><ul class="bullet"><li><s>not logging compositables</s></li></ul></ul><br>STUFF FOR ACTIVE LAYERS:<br><ul class="bullet"><li>[3] Re-introduce Matt&#x27;s FrameMetrics optimizations (to land on central)</li><li>[3] Minimize layer deltas (to land on central)</li><li>[?] Walk APZCs for TransformShadowTree, not layers</li><li>[?] caret layers? bug 866731</li></ul><br><em>PROTOTYPE WORKLIST:</em><br><ul class="bullet"><li><em>[3] Implement mix-blend modes</em></li><li><em>[5] Implement transform support</em></li><li><em>[3] Implement DXGI&#x2F;d2d&#x2F;canvas texture support</em></li><li><em>[2] Implement YUV video support</em></li><li><em>[2] Implement component-alpha support</em></li><li><em>[1] Implement SyncObject support</em></li><li><em>[2] Implement general opacity support</em></li><li><em>[1] Handle buffer allocation failure</em></li><li><em>[1] Implement NV12 video support</em></li><li><em>[5] Implement mask layers</em></li><li><em>[4] Implement BigImage support</em></li><li><em>[2] Remove tiling (for plane splitting)</em></li><li><em>[6] Implement plane splitting</em></li><li><em>[1] Lazy shader initialization</em></li><li><em>[2] Rotate constant&#x2F;vertex buffers when full</em></li><li><em>[1] Split render passes when staging buffers are full</em></li><li><em>[2] Retain render targets for performance</em></li><li><em>[5] Use z-buffer for overlap</em></li><li><em><s>[3] Use textures instead of constant buffers NOT PERFORMANT</s></em></li><li><em>[2] Address APZ hit testing tree updates (active layers critical)</em></li></ul><br>---------------------------------------------------------------------<br>Original notes are below, and most are still relevant:<br>---------------------------------------------------------------------<br><br><br>REPO: <a href="http&#x3a;&#x2F;&#x2F;hg&#x2e;mozilla&#x2e;org&#x2F;users&#x2F;bschouten&#x5f;mozilla&#x2e;com&#x2F;advanced&#x2d;layers&#x2F;">http:&#x2F;&#x2F;hg.mozilla.org&#x2F;users&#x2F;bschouten_mozilla.com&#x2F;advanced-layers&#x2F;</a><br>PREF: layers.advanced-layers.enabled to true to use the advanced layer manager on the compositor side<br><br>- Make TextLayer support multiple colors&#x2F;fonts<br>- Build ContainerLayers around groups of scrolled layers that all share an AGR and only attach FM to the containers<br>- Optimize IPDL transfer of layer properties<br>- Optimize IPDL constructors and dtors<br>- Build ContainerLayers around things with masks, make sure that old-layers still optimizes this in the same way<br>- Don&#x27;t serialize glyphs every time if they haven&#x27;t changed<br><br><br><br><br>We can ask FrameLayerBuilder to only add an items to an existing painted layer if it overlaps the existing visible region. This should results in more PaintedLayer, but covering smaller area and reduce the chance of getting large empty areas.<br>layout.smaller-painted-layers = true to control this<br><br>Remove the #defined MOZ_PICKLE_SENTINEL_CHECKING from <a href="http&#x3a;&#x2F;&#x2F;searchfox&#x2e;org&#x2F;mozilla&#x2d;central&#x2F;source&#x2F;ipc&#x2F;chromium&#x2F;src&#x2F;base&#x2F;pickle&#x2e;h&#x23;26">http:&#x2F;&#x2F;searchfox.org&#x2F;mozilla-central&#x2F;source&#x2F;ipc&#x2F;chromium&#x2F;src&#x2F;base&#x2F;pickle.h#26</a> and see if it makes a performance difference to layer transaction reading&#x2F;writing.<br><br>TODO:<br>&nbsp;&nbsp;&nbsp; - Implement accelerated video<br>&nbsp;&nbsp;&nbsp; - Support masking<br>&nbsp;&nbsp;&nbsp; - Support intermediate surfaces<br>&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>Improving FrameMetrics serialization times:<br>&nbsp;&nbsp;&nbsp; It appears that creating a new FrameMetrics for each potentially scrolled layer and serializing them is slow.<br>&nbsp;&nbsp;&nbsp; A simple solution might be to treat them as a shared object that multiple layers reference. We could do this within the scope of a transaction, and not worry about retaining them between transactions.<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; FrameLayerBuilder calls ComputeScrollMetadata with the content of &#x27;scrollClip&#x27; (DisplayItemScrollClip: the scrollframe, and DisplayItemClip), mContainerReferenceFrame and mParameters (which should be constant for all layers built by the current ContainerState) and the current layer pointer.<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; From what I can tell the layer pointer is only used when APZ is disabled (the !thisScrollFrameUsesAsyncScrolling branch in ScrollFrameHelper::ComputeScrollMetadata) and for logging in nsLayoutUtils::ComputeScrollMetadata.<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; So if ContainerState kept a map of DisplayItemScrollClip -&gt; FrameMetrics then we could avoid computing these each time.<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; The DisplayItemClip member of DisplayItemScrollClip (&#x27;clip&#x27;) is only used for a single property on the final FrameMetrics (metadata.SetScrollClip in nsLayoutUtils::ComputeScrollMetadata), so depending on how often this varies it might be valuable to split it into a separate object that isn&#x27;t cached (or have a 2-level cache).<br><ul class="indent"><li>&nbsp;&nbsp;&nbsp; &lt;mstange&gt; When would this be useful? If you have two identical DisplayItemScrollClips, then they also have the same clip...</li><li>&nbsp;&nbsp;&nbsp;&nbsp; This is for the case where you have two layers that use the same nsIScrollableFrame*, but different DisplayItemClip&#x2F;DisplayItemScrollClips. The computed ScrollMetadata for these would be 99% identical, so seems&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; wasteful to duplicate all the work&#x2F;memory. That said, it hasn&#x27;t shown up as a big problem yet.</li></ul>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; We could also consider retaining them between transactions, but then we need to consider invalidation for them and I haven&#x27;t thought about that yet.<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; UPDATE:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I&#x27;ve written an initial prototype for the first half of this, putting ScrollMetadata on the heap (<a href="https&#x3a;&#x2F;&#x2F;hg&#x2e;mozilla&#x2e;org&#x2F;users&#x2F;bschouten&#x5f;mozilla&#x2e;com&#x2F;advanced&#x2d;layers&#x2F;rev&#x2F;164fbd502abf&#x29;">https:&#x2F;&#x2F;hg.mozilla.org&#x2F;users&#x2F;bschouten_mozilla.com&#x2F;advanced-layers&#x2F;rev&#x2F;164fbd502abf)</a> and caching them in FLB (<a href="https&#x3a;&#x2F;&#x2F;hg&#x2e;mozilla&#x2e;org&#x2F;users&#x2F;bschouten&#x5f;mozilla&#x2e;com&#x2F;advanced&#x2d;layers&#x2F;rev&#x2F;6fe40bb08195&#x29;">https:&#x2F;&#x2F;hg.mozilla.org&#x2F;users&#x2F;bschouten_mozilla.com&#x2F;advanced-layers&#x2F;rev&#x2F;6fe40bb08195)</a>. This makes a huge difference to the time spent within layer building.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Still to do:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Share serializations of ScrollMetadata. Simplest thing to do is probably add a new Edit type for ScrollMetadata. When ShadowLayerForwarder finds a new ScrollMetadata*, it creates an edit to serialize that and puts a id number in to the layer attributes. LayerTransactionParent can do the reverse. IDs numbers would only be valid for the duration of the transaction. - DONE (<a href="https&#x3a;&#x2F;&#x2F;hg&#x2e;mozilla&#x2e;org&#x2F;users&#x2F;bschouten&#x5f;mozilla&#x2e;com&#x2F;advanced&#x2d;layers&#x2F;rev&#x2F;718eac01414c&#x29;">https:&#x2F;&#x2F;hg.mozilla.org&#x2F;users&#x2F;bschouten_mozilla.com&#x2F;advanced-layers&#x2F;rev&#x2F;718eac01414c)</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * My patches currently have ScrollMetadataRefcounted. Once IPDL is sharing serialization, we probably won&#x27;t many (any?) users of the non-refcounted version, so we can&#x2F;should merge them back together.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * FLB checks the nsIScrollableFrame*&#x2F;DisplayItemClip equality manually instead of comparing DisplayItemScrollClip pointers. Is it possible that this actually catches more cases? Likely? It would be faster to do pointer comparison so we can do that if it&#x27;s not helping.<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>Improving TextLayer performance:<br>&nbsp;&nbsp;&nbsp; We currently re-serialize all glyphs each time we do a content-side paint.<br>&nbsp;&nbsp;&nbsp; We should be able to instead use the same data that DLBI uses to determine if the glyph list has changed, and only recompute and reserialize the glyphs if it has.<br>&nbsp;&nbsp;&nbsp; We currently Move() the glyph array into IPDL to avoid a copy, but if anything else mutates the layer (like a transform change) then we&#x27;d need to have recomputed the array again. One solution to that is to copy it into IPDL instead of moving, the other is separating SetGlyphs from the Mutated&#x2F;TextLayerAttributes messages so that it only gets used when it actually changes.<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp; Glyphs are also currently positioned relative to their reference frame, so their positions change on scroll. We could instead compute them relative to the Text element, and add an offset translation to the Layer which moves them to the correct position. We&#x27;d probably want to have implemented the second solution to the Move() problem so that we don&#x27;t copy or send glyphs at all when scrolling.<br>
+</body>
+</html>

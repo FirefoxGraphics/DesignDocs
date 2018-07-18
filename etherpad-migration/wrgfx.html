@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>wrgfx</title>
+<meta name="generator" content="Etherpad">
+<meta name="author" content="Etherpad">
+<meta name="changedby" content="Etherpad">
+<meta charset="utf-8">
+<style>
+* {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+}
+ul.indent {
+  list-style-type: none;
+}
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+body > ol {
+  counter-reset: first second third fourth fifth sixth seventh eigth ninth tenth eleventh twelth thirteenth fourteenth fifteenth sixteenth;
+}
+ol > li:before {
+  content: counter(first) ". ";
+  counter-increment: first;
+}
+ol > ol > li:before {
+  content: counter(first) "." counter(second) ". ";
+  counter-increment: second;
+}
+ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) ". ";
+  counter-increment: third;
+}
+ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) ". ";
+  counter-increment: fourth;
+}
+ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) ". ";
+  counter-increment: fifth;
+}
+ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) ". ";
+  counter-increment: sixth;
+}
+ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) ". ";
+  counter-increment: seventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) ". ";
+  counter-increment: eigth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) ". ";
+  counter-increment: ninth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) ". ";
+  counter-increment: tenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) ". ";
+  counter-increment: eleventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) ". ";
+  counter-increment: twelth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) ". ";
+  counter-increment: thirteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) ". ";
+  counter-increment: fourteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) ". ";
+  counter-increment: fifteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) "." counter(sixthteenth) ". ";
+  counter-increment: sixthteenth;
+}
+ol {
+  text-indent: 0px;
+}
+ol > ol {
+  text-indent: 10px;
+}
+ol > ol > ol {
+  text-indent: 20px;
+}
+ol > ol > ol > ol {
+  text-indent: 30px;
+}
+ol > ol > ol > ol > ol {
+  text-indent: 40px;
+}
+ol > ol > ol > ol > ol > ol {
+  text-indent: 50px;
+}
+ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 60px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 70px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 80px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 90px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 100px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 110px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 120px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 130px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 140px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 150px;
+}
+
+</style>
+</head>
+<body>
+<strong>Quantum Render, Road to Kona - October 31 through December 2</strong><br><br>This is a list of things we will get done before the Hawai&#x27;i All Hands.<br><br>Development Process:<br><ul class="bullet"><li><s>Separate branch (</s><a href="https&#x3a;&#x2F;&#x2F;hg&#x2e;mozilla&#x2e;org&#x2F;projects&#x2F;graphics&#x2F;"><s>https:&#x2F;&#x2F;hg.mozilla.org&#x2F;projects&#x2F;graphics&#x2F;</s></a><s> ) - Vlad - </s><a href="https&#x3a;&#x2F;&#x2F;bugzilla&#x2e;mozilla&#x2e;org&#x2F;show&#x5f;bug&#x2e;cgi&#x3f;id&#x3d;1313177"><s>https:&#x2F;&#x2F;bugzilla.mozilla.org&#x2F;show_bug.cgi?id=1313177</s></a><s> DONE</s></li><li>C<s>ontinuous integration of the graphics branch</s> (<a href="https&#x3a;&#x2F;&#x2F;bugzilla&#x2e;mozilla&#x2e;org&#x2F;show&#x5f;bug&#x2e;cgi&#x3f;id&#x3d;1313389&#x29;">https:&#x2F;&#x2F;bugzilla.mozilla.org&#x2F;show_bug.cgi?id=1313389)</a> - Vlad</li></ul><br>Quantum render &quot;baseline&quot;<br><ul class="bullet"><li><s>Integrate webrender into libgkrust (</s><a href="https&#x3a;&#x2F;&#x2F;github&#x2e;com&#x2F;jrmuizel&#x2F;gecko&#x2d;dev&#x2F;pull&#x2F;21&#x29;"><s>https:&#x2F;&#x2F;github.com&#x2F;jrmuizel&#x2F;gecko-dev&#x2F;pull&#x2F;21)</s></a></li><li><s>Have a working setup where from m-c one can build and run something that has firefox using webrender, that we can build on top of</s></li><li>Have a way to run some sort of tests on this setup (that actually exercise the WR code)</li><li>Get reftests working</li><ul class="bullet"><li>includes canvas - mchang</li></ul><li>Get mochitests working - Morris, ethan</li><li><s>Create Dwrite font backend</s> - vlad</li><li><s>Windows works so people can develop on it</s> - This should be done mchang</li><li>Linux works (still some visual issues) &lt;-- does this mean that we should fix the visual issues? or that linux is working sufficiently that we meet the &quot;baseline&quot; already? or something else?</li></ul><br>WebRender Features:<br><ul class="bullet"><li>Transformed primitives and clipping regions with masks - Dzmitry</li><li>Sub-pixel AA - Glenn</li><li><s>Split layer scrolling</s> - mrobinson</li></ul><br>- Render videos via ImageBridge with current Webrender API (Sotaro)<br>&nbsp; + Add WebRenderAsyncImageContainer to get current ImageKey from ImageHost:<br>&nbsp; + Add WebRenderCompositor<br>&nbsp; + Add Vsync handling<br>&nbsp; + Add NotifyImageComposites() handling<br>&nbsp; + Linux as the platform - Windows as a stretch goal<br><br>Add shared texture support to Webrender (jerry)<br><ul class="bullet"><li>Add shared BufferTexture support to Webrender</li><li>Add shared direct binding Texture support to Webrender</li></ul><br>Build infra (Morris)<br><ul class="bullet"><li><s>Separate bindings to different crate</s></li><li><s>Add --enable-webrender compile option</s></li><li><s>get all test passed without --enable-webrender (tracking in bug 1316217)</s></li></ul><br><strong>OLDER STUFF OLDER STUFF OLDER STUFF OLDER STUFF OLDER STUFF OLDER STUFF</strong><br><br><strong>Quantum Render, the week of October 17th</strong><br><br><em>Summary</em><br><br><ul class="bullet"><li>Alternative paths:&nbsp; We are proceeding with the path that involves the most people early, to account for the possibility that shorter paths do not deliver required improvements.&nbsp; While this may lead to &quot;wasted&quot; work, in the sense that we do more than necessary, it covers us better in the scenario where we do need the majority of the work.&nbsp; Since we don&#x27;t have time to do enough investigations to figure out the minimal amount of work, all the planning is around minimizing the calendar time before we deliver the required improvements, rather than the overall effort.</li><li>Details for the next steps:&nbsp; Get going on Windows.&nbsp; Continue with WR layer manager,&nbsp; add video, texture sharing, IPC and APZ.&nbsp; Groups and leads have been identified.&nbsp; Through Hawaii work week, the goal is to answer technical questions, come up with enough of an architectural description to be able to plan and estimate the remaining work, and identify any potential roadblocks.</li><li>Process changes: working on the name for the approach.&nbsp; It is meant to move the ownership to the team, from individuals, by reducing the time people could spend overlapping, waiting, being blocked or not having enough information to make the right decisions and write the right code.&nbsp; The oversimplified description is &quot;production code only, land something every day, allow for post-landing reviews to reduce blocking.&quot;&nbsp; We will remove the &quot;I am waiting for X to land Y&quot;, &quot;I have to finish this because people are waiting&quot;, &quot;I have to rebase a lot because large change just landed&quot; scenarios, and increase the group ownership of all features.</li></ul><br><br><em>Original planning and notes</em><br><br>Block out 11am-5pm for meetings and discussions in larger groups.&nbsp;<br><br><strong>Monday</strong><br><ul class="bullet"><li>11am - 1pm Compositor process: design, progress, implications.&nbsp; By the end of the session, all have a general understanding of this work.</li><li>1pm - 5pm: QuantumRender overview - options, progress, plan.&nbsp; By the end of the day, we have a single (general) path to follow to Hawaii All Hands, and a list of items to discuss post V1.</li><li>Background: everybody has a build</li><ul class="bullet"><li>CAN WE RENAME WEBRENDER?! To what? Splatt<s>e</s>r</li></ul></ul><br><strong>Tuesday</strong><br><ul class="bullet"><li>11am - 1pm: How we work, and how that may have to change.&nbsp; By the end, we have the ground rules and commitment on following them.</li><li>1pm - 5pm: Next wave in Quantum Render (texture sharing, video, Windows support), and detailed breakdown of the work for the next three months.</li><li>Background: Decide how we want to communicate and track the details of the project.</li></ul><br><strong>Wednesday</strong><br><ul class="bullet"><li>11am - 1pm: How do we measure performance?&nbsp; Proposal from Google [1], what makes sense for us when comparing Gecko and Quantum.</li><li>1pm - 3pm: The rest of the roadmap.&nbsp; Do we have the right breakdown?&nbsp; Is there a better one?&nbsp; Do we agree on approximate sizing?</li><li>3pm: Tooling.&nbsp; More details on the tools that got mentioned in Tuesday AM conversation</li></ul><br><strong>Thursday, Friday</strong><br><ul class="bullet"><li>Take the &quot;next wave&quot; breakdown, and start the coding.&nbsp; See if we can find the holes in the arguments, something we may have missed.</li><li>Background: UX has a set of meetings, Vlad will coordinate a meeting (or two) with them.</li><li>Suggested groups:</li><ul class="bullet"><li>WRLayerManager - Jeff, Mason?, Markus?, Dzmitry?, Morris?, etc. - <a href="https&#x3a;&#x2F;&#x2F;public&#x2e;etherpad&#x2d;mozilla&#x2e;org&#x2F;p&#x2F;wr&#x2d;plan">https:&#x2F;&#x2F;public.etherpad-mozilla.org&#x2F;p&#x2F;wr-plan</a></li><li>IPC, Texture sharing, Video - Peter, Jerry?, Nicolas?, Sotaro?, etc.</li><li>APZ: Kats, Botond, etc.</li><li>WebRender completeness</li></ul></ul><br>By the time the week is done:<br><ul class="bullet"><li>everybody knows what they&#x27;re working on through Hawaii;</li><li>we have updated estimates for WRLayerManager, Texture sharing, Video, APZ</li></ul><br><br>[1] <a href="https&#x3a;&#x2F;&#x2F;docs&#x2e;google&#x2e;com&#x2F;document&#x2F;d&#x2F;1Owfs6arciEnWgT2&#x2d;8bWCcHdYRIKRKZ0Xj8UtqRx4c3k&#x2F;edit&#x23;heading&#x3d;h&#x2e;qhaqo8u1r0ge">https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1Owfs6arciEnWgT2-8bWCcHdYRIKRKZ0Xj8UtqRx4c3k&#x2F;edit#heading=h.qhaqo8u1r0ge</a>&nbsp;<br><br>For Firefox:<br><ul class="bullet"><li>Pro</li><ul class="bullet"><li>We&#x27;re not getting the best out of what we have, could still have room for optimization</li><li>Could get better at invalidation, avoiding drawing commands that use intermediate surfaces &#x2F; group that make us slow</li><li>Painting &#x2F; invalidation for many pages are not a bottleneck (we have telemetry data on this)</li><li>Strictly an improvement path</li><li>Very risky to assume WR will make rasterizing future proof. Can become &quot;good enough&quot;</li></ul><li>Con</li><ul class="bullet"><li>Really hard in current system to reason about what would actually happen with an improvement, might improve in one thing, regress in another</li><li>Very strongly coupled system</li></ul></ul><br>For Chrome<br><ul class="bullet"><li>Pro</li><ul class="bullet"><li>Relatively well proven to raster &#x2F; paint pretty fast.</li><li>Architecture isn&#x27;t dramatically different from what we have</li><li>We already have Skia so fundamentally wouldn&#x27;t have to change backends</li><li>Responsiveness wins due to many things being off main thread</li><li>Data according to Chrome&#x27;s own paint times show not much more improvement overhead for most pages (random spikes notwithstanding)</li></ul><li>Con</li><ul class="bullet"><li>Could be a class of content that fundamentally cannot be drawn fast with this architecture</li><li>Would not fit in with the &quot;leapfrog competition&quot;</li><li>Inefficient&#x2F;zero GPU usage</li><li>Questions about ability to scale appropriately with increased dpi&#x2F;resolution screens</li></ul></ul><br>For WebRender<br><ul class="bullet"><li>Pro</li><ul class="bullet"><li>No invalidation, but it could be added. Invalidation could be a caching scheme</li><li>Made for high resolution screens</li><li>Even if GPU takes longer than CPU, it&#x27;s a different piece of hardware so CPU can do something else</li><li>Shouldn&#x27;t have any performance cliff, gives content scalability</li><li>fewer isolated pipeline steps</li><li>Flash is the example that this could go fast</li></ul><li>Con</li><ul class="bullet"><li>Not sure how we&#x27;d do if we require software rasterization</li><li>Non GPU like printing might be easier with the current system</li><li>Constructing the display list might be expensive everytime</li><li>integration complexity, also with nothing for a while (Jeff oped thinks the API surface isn&#x27;t big enough to be a big deal)</li><li>Lots of GPU driver bugs that we&#x27;d hit into</li><li>Difficulty detecting correctness bugs with drivers</li></ul></ul><br>Discussions that we parked: <a href="https&#x3a;&#x2F;&#x2F;public&#x2e;etherpad&#x2d;mozilla&#x2e;org&#x2F;p&#x2F;gfx&#x2d;parking&#x2d;lot">https:&#x2F;&#x2F;public.etherpad-mozilla.org&#x2F;p&#x2F;gfx-parking-lot</a><br><br><strong>OLDER STUFF OLDER STUFF OLDER STUFF OLDER STUFF OLDER STUFF OLDER STUFF</strong><br><br><strong><u>WebRender in Gecko the week of August 1st</u></strong><br><br><a href="https&#x3a;&#x2F;&#x2F;public&#x2e;etherpad&#x2d;mozilla&#x2e;org&#x2F;p&#x2F;wr&#x2d;plan">https:&#x2F;&#x2F;public.etherpad-mozilla.org&#x2F;p&#x2F;wr-plan</a><br><br>webrender in gecko - <a href="https&#x3a;&#x2F;&#x2F;public&#x2e;etherpad&#x2d;mozilla&#x2e;org&#x2F;p&#x2F;Gecko&#x2d;WebRenderer">https:&#x2F;&#x2F;public.etherpad-mozilla.org&#x2F;p&#x2F;Gecko-WebRenderer</a><br><br><strong>What topics should we cover, perhaps with subsets of people?</strong><br><br><ul><ul class="bullet"><li>IPDL mess with parent&#x2F;child and GPU process</li><li>WebRender and Rust pipes instead of IPDL?</li><li>Should we do it on Android first?</li><li>GPU process, compositor process and WebRender - do we need it?</li><li>Compositor process different approach, making APZ easier?</li><li>WebRender, display list items, only six kinds, hierarchy, types, connection, not losing information, ...</li><li>Crash reports etc. with rust - it all just works?</li><li>Non-OGL backends - DirectX?&nbsp; Vulcan?</li><li>Difference between Bas&#x27; scene graph and WebRender</li><li>WebRender in rust vs C++</li><li>crash reports</li><li>Low level support libraries in Servo (e.g., bla&#x27;s)</li><li>CSS animation</li><li>things with less than wonderful names</li><li>security and memory safety</li></ul></ul><br><br>Process separation (for content only, canvas excluded ATM)<br><ul class="bullet"><li>Abstracting input seems like a noble goal</li><li>A perhaps ideal model for the future: (Chrome process, Content process -&gt; Compositor, GPU, WR, APZ, Input)</li><ul class="bullet"><li>A disadvantage of this approach is that if this process crashes you&#x27;d lose your window so you&#x27;d still need to hold the HWND remotely to survive crashes</li></ul><li>Ship over display items from content&#x2F;chrome and the Webrender Process does the rest</li><li>Having input events on the same process as APZ is faster since sometimes content needs to block for a round trip ipc message from APZ for hit testing</li><li>No one had a solid case for using D3D11&#x2F;GL or WebRender GPU command buffers across processes</li><ul class="bullet"><li>seems better to use WR DisplayItems as the cross-process IPC communication</li></ul></ul><br><ul class="bullet"><li>Quantum Rendering Strawman</li><ol><ol class="number"><li><a href="https&#x3a;&#x2F;&#x2F;docs&#x2e;google&#x2e;com&#x2F;document&#x2F;d&#x2F;1w8t&#x2d;iuwmMzf05nk6m1Pkg&#x5f;GBFxsqaUTB&#x5f;WRPjKMZNWw&#x2F;edit&#x23;heading&#x3d;h&#x2e;q4hj3ync9q7i">https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1w8t-iuwmMzf05nk6m1Pkg_GBFxsqaUTB_WRPjKMZNWw&#x2F;edit#heading=h.q4hj3ync9q7i</a></li></ol></ol></ol><br><br>Quantum notes<br><ul class="bullet"><li>glyph caches are shared across pages in WR</li></ul><br><strong>Agenda draft, with spaces to fill:</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;<br><strong>Monday</strong><br><ul><ul class="bullet"><li>bz, Glenn, Jeff, dvander, Bas, Mason, Milan</li><li>Get together</li><li>Mason can walk us through what he did</li><li>Glenn can tell us about some stuff</li><li>Get everybody set up with a Servo+WebRender2 build</li><li>what are the tough topics?</li></ul></ul><br><strong>Tuesday</strong><br><ul><ul class="bullet"><li>+Vlad, +Patrick, bz, Glenn, Jeff, dvander, Bas, Mason, Milan</li><li>AM: go through Vlad&#8217;s document</li><li>Identify the top nasty issues awaiting us?</li></ul></ul><br><strong>Wednesday</strong><br><ul><ul class="bullet"><li>-Patrick? | Vlad, bz, Glenn, Jeff, dvander, Bas, Mason, Milan</li><li>Process some of the stuff from yesterday</li><li>Maybe some prototyping or investigations</li><li>Examine current webrender numbers</li></ul></ul><br><strong>Thursday</strong><br><ul><ul class="bullet"><li>+dbaron, Vlad, Patrick, bz, Glenn, Jeff, dvander, Bas, Mason, Milan (everybody!)</li><li>conclude things about Vlad&#8217;s document - any things that need push behind investigation</li></ul></ul><br><strong>Friday</strong><br><ul><ul class="bullet"><li>-bz, -Patrick, -dbaron | Vlad, Glenn, Jeff, dvander, Bas, Mason, Milan</li><li>next steps, who&#8217;s doing what and when</li><li>early afternoon end</li></ul></ul><br>---------------------------------------------------------------<br><br>What do we measure?<br>Animations that are bad today.&nbsp; Slide out animations. Something web authors can also understand,&nbsp;&nbsp; No cliffs.&nbsp; How do we get the telemetry like data for heuristics in the slow paths.<br><br><br><ul class="bullet"><li>Measurements</li><ul class="bullet"><li>Framerate at which composition happens (including frame timings, dropped frames etc.)</li><li>Framerate at which layout actually happens (different because of APZ)</li><li>Input latency (input -&gt; on screen) (timings -- not just average)</li><li>Time of first draw</li><li>Time of arbitrary draw</li><li>Need to be able to compare to past&#x2F;origin builds (not just yesterday&#x27;s, but a specific golden build)</li><li>Simulated full browsing session (multiple tabs, open&#x2F;close, etc. -- both fixed and random order)</li><ul class="bullet"><li>due to caching behaviours of different pages</li></ul><li>Restart of GPU process</li><li><br></li></ul></ul><br><ul class="bullet"><li>Immediate Measurements</li><ul class="bullet"><li>Servo&#x2F;WR perf with software (llvmpipe and swiftshader)</li><li>Servo&#x2F;WR vs Gecko on Windows with modern gfx (d2d&#x2F;d3d11)</li><li>Pull out pure frame rasterization numbers out of the above</li></ul></ul><br>-----------------------------------------------------------------------<br><br>Summary of Tuesday (Aug 2) afternoon discussion:<br>&nbsp;&nbsp;&nbsp;&nbsp;<br>The pieces that need to happen in general are the following; these can sort of happen in parallel:<br><ul class="bullet"><li>Output WebRender display items (WRDIs) from Gecko display items.</li><li>Implement whatever new WRDI types we need.</li><li>Implement WebRender optimizations of various sorts.</li></ul><br>A plausible incremental path is a follows:<br><ol class="number"><li>Implement C struct generation from Rust struct declarations, so we can get C declarations of WRDIs generated based on the actual WebRender code.&nbsp; Hook this up to the build system so we have C structs corresponding to WRDIs in Gecko.</li><li>Do the WRDI output from Gecko display items; see whether new WRDI types are needed in the process.</li><li>Add a new way of going from a PaintedLayer to a bitmap by using step 1 to produce WRDIs for the display items in the PaintedLayer and then painting those WRDIs to produce a bitmap.</li><li>(Optional) Move the execution of step 3 to a non-main thread.</li><li>(Optional, if not ready to switch to WebRender backend yet) Change the FrameLayerBuilder to output layers corresponding to WRDIs; change compositor to handle many more layers.&nbsp; Somewhere in here do occlusion culling and other optimizations.</li></ol><br>Step 2 and step 3 can somewhat happen in parallel as follows: We can have a way to ask a display item to output WRDIs or signal failure.&nbsp; Then a PaintedLayer can try to map all its display items to WRDIs.&nbsp; If that succeeds, paint using the new codepath.&nbsp; If any of them fail, paint using our existing codepath.&nbsp; If we do things this way, then once step 3 is done (which can happen before step 2 is done), we can set up continuous integration which exercises the new codepath.&nbsp; Conceivably we can even do something like run our existing reftests, but use the old codepath for the test and the new one for the reference or vice versa.<br><br>=======================================================<br>Which things are hard:<br><ul class="bullet"><li>SVG</li><li>Canvas performance in Servo</li><li>MathML</li><li>XUL tree</li><li>tooling!</li></ul><br>Which things are large:<br><ul class="bullet"><li>90-odd display items, some more complicated than others</li></ul><br>Things to answer:<br><ul class="bullet"><li>Where do we put the low level utilities that are required by WebRender, but not really graphics specific?&nbsp; We have Euclid, ipc.</li><li>Printing</li><li>APZ - from Java to C++ to Rust</li></ul><br>Random thoughts:<br><ul class="bullet"><li>concept of a level of detail</li></ul><br>==================================================================<br>Decisions Made<br>Initial min hw spec<br><ul class="bullet"><li>opengl es 3.0</li><li>DX 10 feature level</li></ul><br><br>Assume XUL, MathML are needed.<br>Assume WR doesn&#x27;t have to deal with native widgets at all.<br><br>Things that might be good to prioritise in Servo&#x2F;WR near future:<br><br>Large image support for WR (too large for hardware)<br>Canvas + cross process texture &#x2F; context sharing for canvas.<br>Video support<br>Software fallback<br>Animated image support<br>Progressive display of images<br>SVG<br>D3D - maybe (but opengl testing priority) (the biggest advantage for this will be interop with DXVA)<br><ul class="bullet"><li>progressive display of images</li><li>Software fallback</li><li>nested clips</li><li>subpixel aa</li></ul><br>==================================================================<br><strong>What can we use to measure performance?&nbsp; Among other things...</strong><br><br><a href="https&#x3a;&#x2F;&#x2F;s3&#x2e;amazonaws&#x2e;com&#x2F;mozilla&#x2d;games&#x2F;emunittest&#x2d;public&#x2F;index&#x2e;html">https:&#x2F;&#x2F;s3.amazonaws.com&#x2F;mozilla-games&#x2F;emunittest-public&#x2F;index.html</a><br><br>==================================================================<br><br><strong>In order, next steps:</strong><br>0. Before ramping up a number of people on Servo related tasks<br><ul class="indent"><li>a. the Windows build needs to be stable&nbsp; and supported as a first class platform</li><li>b. releng and integration of complex rust libraries</li><li>c. what can we lift from Stylo (talk to Bobby)</li></ul><br><ol class="number"><li>Single DI (text?) with WR in Gecko - Boris &amp; Jeff</li><li>OpenGL Windows &#x2F; Android measurements - Mason - ~= ok, mostly working and nothing stupidly surprisingly bad (nvidia worse than intel iris on mac)</li><li>Decide if SVG is fully supported or rendered to texture - Jeff</li><li>Video in Servo - Sotaro August 17 - (make sure Android builds are working)</li><li>Large textures (overflowing cache and&#x2F;or maximum hardware size) - Glenn</li><li>Software fallback - Glenn -</li><li>Canvas - Mason</li><ol class="number"><li>Current implementation - Canvas -&gt; skia via CPU, passes over to webrender via byte buffer, then webrender teats it as an image, uploads to GPU and render</li><li>New implementation - Canvas -&gt; skia GL -&gt; Skia uploads to GPU, send texture id to webrender, webrender just samples the texture into the appropriate place</li><li>Current approach - Canvas -&gt; Skia GL on content process in gecko -&gt; Skia uploads to GPU -&gt; GPU Process + WebRender in Gecko - output shared texture</li><ol class="number"><li>Alternate approach - remote canvas commands to gpu process</li><li>rust-layers in servo&#x2F;rust-layers - does opengl layer management, some rust implementations of cross process texture sharing&nbsp;</li></ol></ol><li>APZ evaluation - what and how big</li></ol><br><br>
+</body>
+</html>
