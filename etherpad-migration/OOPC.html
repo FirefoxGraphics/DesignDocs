@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>OOPC</title>
+<meta name="generator" content="Etherpad">
+<meta name="author" content="Etherpad">
+<meta name="changedby" content="Etherpad">
+<meta charset="utf-8">
+<style>
+* {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+}
+ul.indent {
+  list-style-type: none;
+}
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+body > ol {
+  counter-reset: first second third fourth fifth sixth seventh eigth ninth tenth eleventh twelth thirteenth fourteenth fifteenth sixteenth;
+}
+ol > li:before {
+  content: counter(first) ". ";
+  counter-increment: first;
+}
+ol > ol > li:before {
+  content: counter(first) "." counter(second) ". ";
+  counter-increment: second;
+}
+ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) ". ";
+  counter-increment: third;
+}
+ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) ". ";
+  counter-increment: fourth;
+}
+ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) ". ";
+  counter-increment: fifth;
+}
+ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) ". ";
+  counter-increment: sixth;
+}
+ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) ". ";
+  counter-increment: seventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) ". ";
+  counter-increment: eigth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) ". ";
+  counter-increment: ninth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) ". ";
+  counter-increment: tenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) ". ";
+  counter-increment: eleventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) ". ";
+  counter-increment: twelth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) ". ";
+  counter-increment: thirteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) ". ";
+  counter-increment: fourteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) ". ";
+  counter-increment: fifteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) "." counter(sixthteenth) ". ";
+  counter-increment: sixthteenth;
+}
+ol {
+  text-indent: 0px;
+}
+ol > ol {
+  text-indent: 10px;
+}
+ol > ol > ol {
+  text-indent: 20px;
+}
+ol > ol > ol > ol {
+  text-indent: 30px;
+}
+ol > ol > ol > ol > ol {
+  text-indent: 40px;
+}
+ol > ol > ol > ol > ol > ol {
+  text-indent: 50px;
+}
+ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 60px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 70px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 80px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 90px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 100px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 110px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 120px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 130px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 140px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 150px;
+}
+
+</style>
+</head>
+<body>
+<strong>Out-of-process Compositing (GPU Process, Phase 1) - </strong><a href="https&#x3a;&#x2F;&#x2F;bugzilla&#x2e;mozilla&#x2e;org&#x2F;show&#x5f;bug&#x2e;cgi&#x3f;id&#x3d;1264543"><strong>https:&#x2F;&#x2F;bugzilla.mozilla.org&#x2F;show_bug.cgi?id=1264543</strong></a><br>----------------------------------------<br><br><strong>Objective</strong>: Enable compositing from a separate GPU process. The outcome of this work is that hardware-accelerated compositing should be isolated from the browser UI process, such that if hardware-accelerated composition causes a crash, content and UI can be repainted without user intervention or interruption.<br><br><strong>People: </strong>David Anderson, George Wright, Ryan Hunt. Consulting: Matt Woodrow, Kartikya Gupta, Mason Chang, Jim Matthies, Markus Stange, Bill McCloskey, Benjamin Smedberg.<br><br><strong>Steps:</strong> See implementation notes. Roughly half the work is isolating and building proxies around code that will move from in-process and out-of-process, and the other half is adding new code for the GPU process.<br><br><strong>ETA: </strong>Nightly, mid-October.<br><br><strong>Risks:</strong><br><ul class="bullet"><li>APZ is an unknown, there are open questions as to how to handle input events when the GPU process crashes.</li><li>Startup&#x2F;first-paint regressions are a possibility.</li><li>Full benefit comes with disabling d2d in the UI process, this needs to be measured.</li><li>Can&#x27;t use D3D11 on older versions of Windows 7; have to make product call on whether or not to disable the process, or use D3D9.</li></ul><br><strong>Implementation</strong><br><ol class="number"><li><strong>Widget Proxies</strong></li><ol class="number"><li>What: Objects that allow both in-process and out-of-process compositors to composite to a window.</li><li>Dependencies: None</li><li>Work:</li><ol class="number"><li><s>Develop a Windows-compatible proxy. (bug 1265975)</s></li><li><s>Remove D3D11&#x2F;D3D9 compositor access to widget. (bug 1265975)</s></li><li>Develop a Mac-compatible proxy. (bug 1271870)</li><ol class="number"><li>Requires an additional compositing model for Mac; see bug 1271870.</li></ol><li>Remove OGL compositor access to widget.</li></ol><li>Owner: msteng (mac&#x2F;ogl)</li></ol><li><strong><s>CompositorBridge Proxies</s></strong></li><ol class="number"><li><s>What: Proxy non-compositor-thread access to CompositorBridgeParent.</s></li><li><s>Dependencies: None</s></li><li><s>Work:</s></li><ol class="number"><li><s>Remove widget access via CompositorSession abstraction (bug 1272472)</s></li><li><s>Remove DOM access via GPUProcessManager abstraction (bug 1274149)</s></li></ol><li><s>Time: 2 weeks</s></li><li><s>Owner: dvander</s></li></ol><li><strong><s>GPU Process Skeleton</s></strong></li><ol class="number"><li><s>What: Add minimum code to launch a GPU process. (bug 1271180)</s></li><li><s>Dependencies: None</s></li><li><s>Work:</s></li><ol class="number"><li><s>IPDL boilerplate</s></li><li><s>Crashreporter integration</s></li><li><s>Telemetry integration</s></li><li><s>Shutdown boilerplate</s></li><li><s>gfxConfig hook-up</s></li></ol><li><s>Time: 2 weeks</s></li><li><s>Owner: dvander</s></li></ol><li><strong>Create GPU Process Compositor</strong></li><ol class="number"><li><s>What: Enable compositing via the GPU process.</s></li><li><s>Dependencies: Widget Proxies, CBP Proxies, GPU Process Skeleton</s></li><li><s>Work:</s></li><ol class="number"><li><s>Split gfxPlatform into pieces Compositor needs (bug 1282364)</s></li><li><s>Refactor gfxPrefs for GPU Process</s></li><li><s>Add a new RemoteCompositorSession implementation. (bug 1282348)</s></li><ol class="number"><li><s>Bridge content processes to the GPU process.</s></li></ol><li><s>Add IPDL glue for widget proxies. (bug 1281998)</s></li><li><s>Add IPDL glue for vsync dispatch. (bug 1285625)</s></li><li><s>New: Add support for PImageBridge (bug 1287366)</s></li><li><s>New: Add support for PVRManager. (bug 1287597)</s></li><li><s>New: Content sandbox compatibility. (bug 1287984, bug 1289895)</s></li></ol><li><s>Time: 4-6 weeks</s></li><li><s>Owner: dvander</s></li></ol><li><strong><s>Enable Async Pan&#x2F;Zoom</s></strong></li><ol class="number"><li><s>What: Enable async pan&#x2F;zoom in the GPU process.</s></li><li><s>Dependencies: CBP proxies, some of GPU Process Compositor.</s></li><li><s>Work:</s></li><ol class="number"><li><s>Develop wrapper class for widget&#x2F;DOM APZCTreeManager calls. (bug 1281575)</s></li><li><s>Expose IPDL version of wrapper through RemoteCompositorSession. (bug 1281575)</s></li><li><s>Hook up RemoteContentController for chrome.</s></li><li><s>Enable in GPU process. (bug 1298245)</s></li></ol><li><s>Time: 3-4 weeks</s></li><li><s>Owner: rhunt</s></li></ol><li><strong>Restarts</strong></li><ol class="number"><li>What: Seamless restarting of GPU process on failure (bug 1297251)</li><li>Dependencies: GPU Process Compositor</li><li>Work:</li><ol class="number"><li><s>Notify children to recreate rendering stack:</s></li><ol class="number"><li><s>CompositorBridge</s></li><li><s>ImageBridge</s></li></ol><li><s>Re-create in-process after N attempts.</s></li><li><s>Clean up gfxCriticalError&#x2F;MOZ_ASSERTs</s></li><li>Telemetry for failures.</li><li>Device resets.</li></ol><li>Time: 4-6 weeks</li><li>Owner: dvander</li></ol><li><strong>Polish</strong></li><ol class="number"><li>What: Polish items for shipping.</li><li>Dependencies: All of the above</li><li>Work:</li><ol class="number"><li>Platform viability checks (bug 1297822)</li><li>about:support messaging (bug 1297792)</li><li>Telemetry (bug 1297790, bug 1304494)</li><li><s>IPDL error handling (bug 1297826)</s></li><li><s>gfxCriticalError support (bug 1297828)</s></li><li>Crash reporter integration (bug 1297843)</li><li>Sandboxing</li><li>Miscellanious:</li><ol class="number"><li>Test content shutdown</li><li>Only use GPU process for acceleration?</li><li>Test that plugins work</li><li>Talos performance tests</li></ol></ol><li>Time: 4-6 weeks</li></ol><li><strong>Follow-up Work</strong></li><ol class="number"><li><s>Disabling D2D in the E10S parent processes - no dependencies. (bug </s>1294986)</li></ol></ol><br>
+</body>
+</html>

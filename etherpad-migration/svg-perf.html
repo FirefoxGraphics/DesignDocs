@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>svg-perf</title>
+<meta name="generator" content="Etherpad">
+<meta name="author" content="Etherpad">
+<meta name="changedby" content="Etherpad">
+<meta charset="utf-8">
+<style>
+* {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+}
+ul.indent {
+  list-style-type: none;
+}
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+body > ol {
+  counter-reset: first second third fourth fifth sixth seventh eigth ninth tenth eleventh twelth thirteenth fourteenth fifteenth sixteenth;
+}
+ol > li:before {
+  content: counter(first) ". ";
+  counter-increment: first;
+}
+ol > ol > li:before {
+  content: counter(first) "." counter(second) ". ";
+  counter-increment: second;
+}
+ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) ". ";
+  counter-increment: third;
+}
+ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) ". ";
+  counter-increment: fourth;
+}
+ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) ". ";
+  counter-increment: fifth;
+}
+ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) ". ";
+  counter-increment: sixth;
+}
+ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) ". ";
+  counter-increment: seventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) ". ";
+  counter-increment: eigth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) ". ";
+  counter-increment: ninth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) ". ";
+  counter-increment: tenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) ". ";
+  counter-increment: eleventh;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) ". ";
+  counter-increment: twelth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) ". ";
+  counter-increment: thirteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) ". ";
+  counter-increment: fourteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) ". ";
+  counter-increment: fifteenth;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > li:before {
+  content: counter(first) "." counter(second) "." counter(third) "." counter(fourth) "." counter(fifth) "." counter(sixth) "." counter(seventh) "." counter(eigth) "." counter(ninth) "." counter(tenth) "." counter(eleventh) "." counter(twelth) "." counter(thirteenth) "." counter(fourteenth) "." counter(fifteenth) "." counter(sixthteenth) ". ";
+  counter-increment: sixthteenth;
+}
+ol {
+  text-indent: 0px;
+}
+ol > ol {
+  text-indent: 10px;
+}
+ol > ol > ol {
+  text-indent: 20px;
+}
+ol > ol > ol > ol {
+  text-indent: 30px;
+}
+ol > ol > ol > ol > ol {
+  text-indent: 40px;
+}
+ol > ol > ol > ol > ol > ol {
+  text-indent: 50px;
+}
+ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 60px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 70px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 80px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 90px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 100px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 110px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 120px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 130px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 140px;
+}
+ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol > ol {
+  text-indent: 150px;
+}
+
+</style>
+</head>
+<body>
+<a href="http&#x3a;&#x2F;&#x2F;projects&#x2e;fivethirtyeight&#x2e;com&#x2F;2016&#x2d;election&#x2d;forecast&#x2F;">http:&#x2F;&#x2F;projects.fivethirtyeight.com&#x2F;2016-election-forecast&#x2F;</a><br><a href="https&#x3a;&#x2F;&#x2F;github&#x2e;com&#x2F;d3&#x2F;d3&#x2F;wiki&#x2F;Gallery">https:&#x2F;&#x2F;github.com&#x2F;d3&#x2F;d3&#x2F;wiki&#x2F;Gallery</a><br><a href="http&#x3a;&#x2F;&#x2F;snapsvg&#x2e;io&#x2F;about&#x2F;">http:&#x2F;&#x2F;snapsvg.io&#x2F;about&#x2F;</a> -- by Adobe<br><a href="http&#x3a;&#x2F;&#x2F;snapsvg&#x2e;io&#x2F;demos&#x2F;">http:&#x2F;&#x2F;snapsvg.io&#x2F;demos&#x2F;</a><br>id openstreetmap editor<br><a href="http&#x3a;&#x2F;&#x2F;demos&#x2e;bonsaijs&#x2e;org&#x2F;demos&#x2F;">http:&#x2F;&#x2F;demos.bonsaijs.org&#x2F;demos&#x2F;</a><br><a href="http&#x3a;&#x2F;&#x2F;www&#x2e;highcharts&#x2e;com">http:&#x2F;&#x2F;www.highcharts.com</a><br><a href="http&#x3a;&#x2F;&#x2F;www&#x2e;highcharts&#x2e;com&#x2F;demo&#x2F;3d&#x2d;column&#x2d;interactive">http:&#x2F;&#x2F;www.highcharts.com&#x2F;demo&#x2F;3d-column-interactive</a><br><a href="https&#x3a;&#x2F;&#x2F;plot&#x2e;ly">https:&#x2F;&#x2F;plot.ly</a> uses d3<br><a href="http&#x3a;&#x2F;&#x2F;makeyourmoneymatter&#x2e;org&#x2F;">http:&#x2F;&#x2F;makeyourmoneymatter.org&#x2F;</a><br><a href="https&#x3a;&#x2F;&#x2F;upload&#x2e;wikimedia&#x2e;org&#x2F;wikipedia&#x2F;commons&#x2F;f&#x2F;f8&#x2F;Whisky&#x5f;distilleries&#x5f;and&#x5f;regions&#x5f;in&#x5f;Scotland&#x2e;svg">https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;f&#x2F;f8&#x2F;Whisky_distilleries_and_regions_in_Scotland.svg</a> (non-animated)<br><a href="http&#x3a;&#x2F;&#x2F;www&#x2e;nytimes&#x2e;com&#x2F;interactive&#x2F;2013&#x2F;01&#x2F;29&#x2F;us&#x2F;where&#x2d;50000&#x2d;guns&#x2d;in&#x2d;chicago&#x2d;came&#x2d;from&#x2e;html&#x3f;ref&#x3d;us&amp;&#x5f;r&#x3d;2">http:&#x2F;&#x2F;www.nytimes.com&#x2F;interactive&#x2F;2013&#x2F;01&#x2F;29&#x2F;us&#x2F;where-50000-guns-in-chicago-came-from.html?ref=us&amp;_r=2</a> (non-animated)<br><a href="https&#x3a;&#x2F;&#x2F;codepen&#x2e;io&#x2F;alaricweb&#x2F;pen&#x2F;YQoOzr">https:&#x2F;&#x2F;codepen.io&#x2F;alaricweb&#x2F;pen&#x2F;YQoOzr</a> (animated)<br><a href="https&#x3a;&#x2F;&#x2F;www&#x2e;jasondavies&#x2e;com&#x2F;factorisation&#x2d;diagrams&#x2F;">https:&#x2F;&#x2F;www.jasondavies.com&#x2F;factorisation-diagrams&#x2F;</a><br><br>benchmarks:<br>&nbsp;&nbsp;&nbsp; this one should be pretty easy to stand up and webrender can probably do well:<br><a href="http&#x3a;&#x2F;&#x2F;www&#x2e;themaninblue&#x2e;com&#x2F;experiment&#x2F;AnimationBenchmark&#x2F;svg&#x2F;">http:&#x2F;&#x2F;www.themaninblue.com&#x2F;experiment&#x2F;AnimationBenchmark&#x2F;svg&#x2F;</a><br><a href="http&#x3a;&#x2F;&#x2F;trac&#x2e;webkit&#x2e;org&#x2F;export&#x2F;HEAD&#x2F;trunk&#x2F;PerformanceTests&#x2F;Animometer&#x2F;developer&#x2e;html">http:&#x2F;&#x2F;trac.webkit.org&#x2F;export&#x2F;HEAD&#x2F;trunk&#x2F;PerformanceTests&#x2F;Animometer&#x2F;developer.html</a><br><br><a href="file&#x3a;&#x2F;&#x2F;&#x2F;Users&#x2F;jrmuizel&#x2F;src&#x2F;WebKit&#x2F;PerformanceTests&#x2F;Animometer&#x2F;developer&#x2e;html&#x3f;test&#x2d;interval&#x3d;20&amp;display&#x3d;progress&#x2d;bar&amp;controller&#x3d;ramp&amp;frame&#x2d;rate&#x3d;50&amp;kalman&#x2d;process&#x2d;error&#x3d;1&amp;kalman&#x2d;measurement&#x2d;error&#x3d;4&amp;time&#x2d;measurement&#x3d;performance&amp;suite&#x2d;name&#x3d;HTMLsuite&amp;test&#x2d;name&#x3d;CSSbouncingcircles">file:&#x2F;&#x2F;&#x2F;Users&#x2F;jrmuizel&#x2F;src&#x2F;WebKit&#x2F;PerformanceTests&#x2F;Animometer&#x2F;developer.html?test-interval=20&amp;display=progress-bar&amp;controller=ramp&amp;frame-rate=50&amp;kalman-process-error=1&amp;kalman-measurement-error=4&amp;time-measurement=performance&amp;suite-name=HTMLsuite&amp;test-name=CSSbouncingcircles</a><br>
+</body>
+</html>
